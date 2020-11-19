@@ -32,18 +32,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         guard let camera = sceneView.pointOfView else { return }
 
-                let textGeometry = SCNText(string: message, extrusionDepth: 0.8)
-                textGeometry.firstMaterial?.diffuse.contents = UIColor(named: "ArizarARFontColor")
-                textGeometry.font = UIFont(name: "HiraginoSans-W6", size: 100)
-                let textNode = SCNNode(geometry: textGeometry)
-                let position = SCNVector3(0,0.1,-0.1)
-                textNode.position = camera.convertPosition(position, to: nil)
-                //カメラの向きに合わせる
-                textNode.eulerAngles = camera.eulerAngles
-                //大きさ設定
-                textNode.scale = SCNVector3(0.0001,0.0001,0.001)
-
-                sceneView.scene.rootNode.addChildNode(textNode)
+        let textGeometry = SCNText(string: message, extrusionDepth: 0.8)
+        textGeometry.firstMaterial?.diffuse.contents = UIColor(named: "ArizarARFontColor")
+        textGeometry.font = UIFont(name: "HiraginoSans-W6", size: 100)
+        let textNode = SCNNode(geometry: textGeometry)
+        let position = SCNVector3(0,0.1,-0.1)
+        textNode.position = camera.convertPosition(position, to: nil)
+        //カメラの向きに合わせる
+        textNode.eulerAngles = camera.eulerAngles
+        //大きさ設定
+        textNode.scale = SCNVector3(0.0001,0.0001,0.001)
+        //テキストオブジェクトをsenseViewに表示
+        sceneView.scene.rootNode.addChildNode(textNode)
     }
     
     override func viewWillAppear(_ animated: Bool) {
