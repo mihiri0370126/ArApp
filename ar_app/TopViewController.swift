@@ -11,14 +11,17 @@ import CoreLocation
 
 class TopViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var count: UILabel!
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var d: UITabBarItem!
+    var con1Cnt:Int = 0
     var locationManager: CLLocationManager!
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        d.badgeValue = "test"
         // ロケーションマネージャーのセットアップ
         locationManager = CLLocationManager()
         locationManager.delegate = self
@@ -38,8 +41,8 @@ class TopViewController: UIViewController, CLLocationManagerDelegate {
         
         // ビルを3Dに見えるようにする.
         mapView.showsBuildings = true
+        
     }
-    
 
     //Private許可
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
@@ -91,5 +94,8 @@ class TopViewController: UIViewController, CLLocationManagerDelegate {
             testPinView.pinTintColor = UIColor.blue
             return testPinView
         }
+    func doSomeAction(){
+        d.badgeValue = "change"
+    }
 }
 
