@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		78E09A105C638BE5AF59CF72 /* Pods_ar_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C8A3321F3C6DE22DBE9CA9 /* Pods_ar_app.framework */; };
 		F9187A232567922200921F4C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9187A222567922200921F4C /* TabBarController.swift */; };
+		F91E74B12578ADA700EC4A7B /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E74B02578ADA700EC4A7B /* TestViewController.swift */; };
 		F94061402567536B00C4C13B /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F940613F2567536B00C4C13B /* MusicViewController.swift */; };
+		F97B27692583020700016B4D /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B27682583020700016B4D /* PresentationController.swift */; };
+		F97B276E25A44E3600016B4D /* ChooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B276D25A44E3500016B4D /* ChooseViewController.swift */; };
+		F97B277125A4572E00016B4D /* VerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B277025A4572E00016B4D /* VerViewController.swift */; };
+		F97B277425A45D9400016B4D /* CouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B277325A45D9400016B4D /* CouponViewController.swift */; };
+		F97B277725A470A200016B4D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97B277625A470A200016B4D /* FirstViewController.swift */; };
 		F9B75DB8254817BD0075AC45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B75DB7254817BD0075AC45 /* AppDelegate.swift */; };
 		F9B75DBA254817BD0075AC45 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = F9B75DB9254817BD0075AC45 /* art.scnassets */; };
 		F9B75DBC254817BD0075AC45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9B75DBB254817BD0075AC45 /* ViewController.swift */; };
@@ -24,7 +30,13 @@
 		C6C8A3321F3C6DE22DBE9CA9 /* Pods_ar_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ar_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E764D78CDF28E360C2EE0EDE /* Pods-ar_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ar_app.release.xcconfig"; path = "Target Support Files/Pods-ar_app/Pods-ar_app.release.xcconfig"; sourceTree = "<group>"; };
 		F9187A222567922200921F4C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		F91E74B02578ADA700EC4A7B /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		F940613F2567536B00C4C13B /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		F97B27682583020700016B4D /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		F97B276D25A44E3500016B4D /* ChooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseViewController.swift; sourceTree = "<group>"; };
+		F97B277025A4572E00016B4D /* VerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerViewController.swift; sourceTree = "<group>"; };
+		F97B277325A45D9400016B4D /* CouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponViewController.swift; sourceTree = "<group>"; };
+		F97B277625A470A200016B4D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F9B75DB4254817BD0075AC45 /* ar_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ar_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9B75DB7254817BD0075AC45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9B75DB9254817BD0075AC45 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -68,6 +80,8 @@
 		F9B75DAB254817BD0075AC45 = {
 			isa = PBXGroup;
 			children = (
+				F97B277325A45D9400016B4D /* CouponViewController.swift */,
+				F97B277025A4572E00016B4D /* VerViewController.swift */,
 				F9B75DB6254817BD0075AC45 /* ar_app */,
 				F9B75DB5254817BD0075AC45 /* Products */,
 				55FF3FA5929F67097FE180F5 /* Pods */,
@@ -90,12 +104,16 @@
 				F9B75DB9254817BD0075AC45 /* art.scnassets */,
 				F9B75DBB254817BD0075AC45 /* ViewController.swift */,
 				F9B75DBD254817BD0075AC45 /* Main.storyboard */,
+				F97B277625A470A200016B4D /* FirstViewController.swift */,
+				F97B276D25A44E3500016B4D /* ChooseViewController.swift */,
+				F97B27682583020700016B4D /* PresentationController.swift */,
 				F9B75DE12553A6040075AC45 /* TopViewController.swift */,
 				F9B75DC0254817BF0075AC45 /* Assets.xcassets */,
 				F9B75DC2254817BF0075AC45 /* LaunchScreen.storyboard */,
 				F9B75DC5254817BF0075AC45 /* Info.plist */,
 				F940613F2567536B00C4C13B /* MusicViewController.swift */,
 				F9187A222567922200921F4C /* TabBarController.swift */,
+				F91E74B02578ADA700EC4A7B /* TestViewController.swift */,
 			);
 			path = ar_app;
 			sourceTree = "<group>";
@@ -217,9 +235,15 @@
 			files = (
 				F94061402567536B00C4C13B /* MusicViewController.swift in Sources */,
 				F9B75DE22553A6040075AC45 /* TopViewController.swift in Sources */,
+				F97B277425A45D9400016B4D /* CouponViewController.swift in Sources */,
+				F97B27692583020700016B4D /* PresentationController.swift in Sources */,
 				F9B75DBC254817BD0075AC45 /* ViewController.swift in Sources */,
 				F9187A232567922200921F4C /* TabBarController.swift in Sources */,
+				F97B276E25A44E3600016B4D /* ChooseViewController.swift in Sources */,
+				F91E74B12578ADA700EC4A7B /* TestViewController.swift in Sources */,
+				F97B277125A4572E00016B4D /* VerViewController.swift in Sources */,
 				F9B75DB8254817BD0075AC45 /* AppDelegate.swift in Sources */,
+				F97B277725A470A200016B4D /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
